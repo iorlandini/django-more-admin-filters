@@ -11,18 +11,9 @@ def read(filename):
         return file.read()
 
 
-version = __import__("more_admin_filters").__version__
-if '-dev' in version:
-    dev_status = 'Development Status :: 3 - Alpha'
-elif '-beta' in version:
-    dev_status = 'Development Status :: 4 - Beta'
-else:
-    dev_status = 'Development Status :: 5 - Production/Stable'
-
-
 setup(
     name="django-more-admin-filters",
-    version=version,
+    version="1.3",
     description="Additional filters for django-admin.",
     long_description=read("README.rst"),
     author="Thomas Leichtfuß",
@@ -35,7 +26,6 @@ setup(
         "Django>=1.11,<4.1",
     ],
     classifiers=[
-        dev_status,
         "Framework :: Django",
         "Environment :: Web Environment",
         "Intended Audience :: Developers",
