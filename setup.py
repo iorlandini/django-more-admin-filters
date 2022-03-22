@@ -13,7 +13,7 @@ def read(filename):
 
 setup(
     name="django-more-admin-filters",
-    version="1.3",
+    version="1.4",
     description="Additional filters for django-admin.",
     long_description=read("README.rst"),
     author="Thomas Leichtfuß",
